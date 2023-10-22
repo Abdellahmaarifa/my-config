@@ -1,0 +1,99 @@
+{
+  "C_Cpp.intelliSenseEngine": "disabled",
+  "workbench.sideBar.location": "right",
+  "editor.minimap.enabled": false,
+  "window.commandCenter": false,
+  "workbench.layoutControl.enabled": false,
+  "workbench.colorTheme": "Snazzy Plus - Darker w/ Italics",
+  "editor.fontSize": 18,
+  "editor.fontFamily": "'JetBrainsMono Nerd Font Mono'",
+  "editor.fontLigatures": true,
+  "files.autoSave": "onFocusChange",
+  "editor.lineHeight": 25,
+  "workbench.iconTheme": "material-icon-theme",
+  "editor.suggest.insertMode": "replace",
+  "workbench.settings.editor": "json",
+  "explorer.confirmDelete": false,
+  "explorer.confirmDragAndDrop": false,
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "vim.leader": "<space>",
+  "vim.visualModeKeyBindings": [
+    {
+      "before":["v"],
+      "after":["esc"]
+    }
+  ],
+  "vim.insertModeKeyBindings": [
+
+    {
+      "before": ["j", "k"],
+      "after": ["esc"]
+    },
+    {
+      "before": ["k", "j"],
+      "after": ["esc"]
+    }
+  ],
+  "vim.normalModeKeyBindings": [
+    {
+      "before": ["leader", "w"],
+      "commands": [":w!"]
+    },
+    {
+      "before": ["leader", "q"],
+      "commands": [":q!"]
+    },
+    {
+      "before": ["leader", "x"],
+      "commands": [":x!"]
+    },
+    {
+      "before": ["<c-a>"],
+      "after": ["g", "g", "V", "G"]
+    },
+    {
+      "before": ["]", "d"],
+      "commands": ["editor.action.marker.next"]
+    },
+    {
+      "before": ["[", "d"],
+      "commands": ["editor.action.marker.prev"]
+    }
+  ],
+  "workbench.activityBar.visible": false,
+  "editor.codeActionsOnSave": {
+    "source.addMissingImports": true,
+    "source.organizeImports": true
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "editor.formatOnSave": true,
+  "[html]": {
+    "editor.defaultFormatter": "vscode.html-language-features"
+  },
+  "workbench.editor.enablePreview": false,
+  "workbench.statusBar.visible": false,
+  "breadcrumbs.enabled": false,
+  "workbench.editor.showTabs": false,
+  "window.menuBarVisibility": "toggle",
+  "editor.renderWhitespace": "none",
+  "editor.accessibilitySupport": "off",
+  "gitlens.codeLens.enabled": false,
+  "gitlens.currentLine.pullRequests.enabled": false,
+  "gitlens.hovers.enabled": false,
+  "gitlens.statusBar.enabled": false,
+  "gitlens.views.commits.files.layout": "list",
+  "git.enabled": false,
+  "editor.scrollbar.horizontal": "hidden",
+  "editor.scrollbar.horizontalScrollbarSize": 2,
+  "editor.scrollbar.verticalScrollbarSize": 2,
+  "editor.scrollbar.vertical": "hidden"
+}
+
