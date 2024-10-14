@@ -1,0 +1,51 @@
+// Zed keymap
+//
+// For information on binding keys, see the Zed
+// documentation: https://zed.dev/docs/key-bindings
+//
+// To see the default key bindings run `zed: open default keymap`
+// from the command palette.
+[
+  {
+    "context": "Workspace",
+    "bindings": {
+      "alt-h": ["workspace::ActivatePaneInDirection", "Left"],
+      "alt-l": ["workspace::ActivatePaneInDirection", "Right"],
+      "alt-k": ["workspace::ActivatePaneInDirection", "Up"],
+      "alt-j": ["workspace::ActivatePaneInDirection", "Down"],
+      "alt-i": "workspace::ToggleRightDock",
+      // "shift shift": "file_finder::Toggle"
+      // "alt-r": "terminal_panel::ToggleFocus"
+      "alt-t": "workspace::ToggleBottomDock",
+      "alt-shift-t": "workspace::NewTerminal",
+      "alt-e": "workspace::ToggleLeftDock"
+    }
+  },
+  {
+    "context": "Editor",
+    "bindings": {
+      // "j k": ["workspace::SendKeystrokes", "escape"]
+      "alt-w": ["pane::CloseActiveItem", { "saveIntent": "saveAll" }],
+      "space w": "workspace::Save",
+      "alt-p": "command_palette::Toggle",
+      "alt-e": "project_panel::ToggleFocus"
+    }
+  },
+  {
+    "context": "Terminal",
+    "bindings": {
+      "alt-l": "pane::ActivateNextItem",
+      "alt-h": "pane::ActivatePrevItem",
+      "alt-shift-q": "pane::CloseActiveItem"
+    }
+  },
+  {
+    "context": "ProjectPanel && not_editing",
+    "bindings": {
+      "a": "project_panel::NewFile",
+      "k": "pane::TogglePreviewTab",
+      "shift-j": ["workspace::SendKeystrokes", "j  p"],
+      "shift-k": ["workspace::SendKeystrokes", "k  p"]
+    }
+  }
+]
