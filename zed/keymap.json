@@ -13,22 +13,27 @@
       "alt-l": ["workspace::ActivatePaneInDirection", "Right"],
       "alt-k": ["workspace::ActivatePaneInDirection", "Up"],
       "alt-j": ["workspace::ActivatePaneInDirection", "Down"],
-      "alt-i": "workspace::ToggleRightDock",
       // "shift shift": "file_finder::Toggle"
       // "alt-r": "terminal_panel::ToggleFocus"
       "alt-t": "workspace::ToggleBottomDock",
       "alt-shift-t": "workspace::NewTerminal",
-      "alt-e": "workspace::ToggleLeftDock"
+      "alt-e": "workspace::ToggleRightDock"
     }
   },
+  // {
+  //   "context": "Editor && vim_mode == insert",
+  //   "bindings": {
+  //     "space w": "workspace::Save"
+  //   }
+  // },
   {
     "context": "Editor",
     "bindings": {
       // "j k": ["workspace::SendKeystrokes", "escape"]
       "alt-w": ["pane::CloseActiveItem", { "saveIntent": "saveAll" }],
-      "space w": "workspace::Save",
       "alt-p": "command_palette::Toggle",
-      "alt-e": "project_panel::ToggleFocus"
+      "alt-e": "project_panel::ToggleFocus",
+      "alt-i": "assistant::ToggleFocus"
     }
   },
   {
